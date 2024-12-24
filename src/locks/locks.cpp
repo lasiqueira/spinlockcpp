@@ -22,7 +22,7 @@ class SpinLock
                 // reduce power consumption on Intel CPUs
                 // (can substitute with std::this_thread:::yield()
                 // on platforms that don't support CPU pause, if
-                // thread contentoon is expected to be high)
+                // thread contention is expected to be high)
                 PAUSE();
             }
         }
